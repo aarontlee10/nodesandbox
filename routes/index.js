@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+/*GET app page*/
+router.get('/app', function(req, res, next) {
+	res.render('app', {title: 'Application'});
+});
 module.exports = router;
